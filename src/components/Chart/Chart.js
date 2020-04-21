@@ -12,7 +12,7 @@ export default function Chart() {
         };
 
         fetchAPI();
-        console.log(dailyData);
+        // console.log(dailyData);
     });
 
     const lineChart = dailyData.length ? (
@@ -28,7 +28,7 @@ export default function Chart() {
                     },
                     {
                         data: dailyData.map(({ deaths }) => deaths),
-                        label: "Infected",
+                        label: "Deaths",
                         borderColor: "red",
                         backgroundColor: "rgba(255, 0, 0, 0.5)",
                         fill: true,
